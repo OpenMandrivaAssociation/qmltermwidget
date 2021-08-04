@@ -1,5 +1,5 @@
 %global debug_package %{nil}
-%define snapshot 20200829
+%define snapshot 20210804
 
 Summary:	Terminal widget for QML
 Name:		qmltermwidget
