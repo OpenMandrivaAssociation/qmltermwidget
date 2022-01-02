@@ -4,9 +4,10 @@
 Summary:	Terminal widget for QML
 Name:		qmltermwidget
 Version:	0.7.0
-Release:	%{?snapshot:0.%{snapshot}.}1
+Release:	%{?snapshot:0.%{snapshot}.}2
 License:	GPLv2
 Source0:	https://github.com/Swordfish90/qmltermwidget/archive/master/%{name}-%{snapshot}.tar.gz
+Patch0:		https://github.com/Swordfish90/qmltermwidget/pull/31.patch
 Group:		System/Libraries
 BuildRequires:	qmake5
 BuildRequires:	make
