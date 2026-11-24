@@ -1,12 +1,13 @@
 %global debug_package %{nil}
-%define snapshot 20260126
+%define snapshot 20260531
+%define commit 8913504fa2ebd220ebe7c680c32954e1b3c035c5
 
 Summary:	Terminal widget for QML
 Name:		qmltermwidget
 Version:	0.7.0
-Release:	%{?snapshot:0.%{snapshot}.}2
+Release:	%{?snapshot:0.%{snapshot}.}1
 License:	GPLv2
-Source0:	https://github.com/Swordfish90/qmltermwidget/archive/master/%{name}-%{snapshot}.tar.gz
+Source0:	https://github.com/Swordfish90/qmltermwidget/archive/%{commit}.tar.gz#/%{name}-%{snapshot}.tar.gz
 Group:		System/Libraries
 BuildRequires:	qmake-qt6
 BuildRequires:	make
@@ -23,7 +24,7 @@ BuildRequires:	pkgconfig(gl)
 Terminal widget for QML
 
 %prep
-%autosetup -p1 -n qmltermwidget-master
+%autosetup -p1 -n %{name}-%{commit}
 
 # Rename KProcess to KTermProcess to avoid clashes with
 # KF CoreAddons
